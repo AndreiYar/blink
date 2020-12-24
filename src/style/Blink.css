@@ -1,9 +1,19 @@
 blink, 
 .blink{
-    /* css styles go here  */
+    animation: blink-animation 0.25s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.25s steps(5, start) infinite;
 }
-
+  
 .react-blink{
-    /* react styles go here  */
+  
 }
-
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
